@@ -28,7 +28,7 @@ function initViz(){
             }
         };
 
-        
+
     var viz = new tableau.Viz(containerDiv, url, options);
     //viz here is of the global scope and a variable
     //A new object created for an inbuilt object/function called tableau with a property called Viz
@@ -38,14 +38,17 @@ function initViz(){
 
 
 function barChart(){
+    workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Bar Chart")
 };
 
 function bubbleChart(){
+    workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Bubble Chart")
 };
 
 function boxAndWhisker(){
+    workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Box and Whisker")
 };
 
