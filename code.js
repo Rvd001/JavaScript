@@ -14,3 +14,12 @@ function promptuser(){
 let car = [];
 car.push('kenny')
 console.log(car)
+
+function initViz(){
+    var containerDiv = document.getElementById('"vizContainer"');
+    var url = "";
+    var viz = new tableau.Viz(containerDiv, url)
+};
+
+
+
