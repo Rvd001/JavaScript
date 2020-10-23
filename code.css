@@ -1,4 +1,19 @@
 #vizContainer{
 height: 900px;
 width: 1600px;
-}
+};
+
+#barChart{
+margin: 20px;
+padding: 10px;
+};
+
+#bubbleChart{
+    margin: 20px;
+    padding: 10px;
+    };
+
+#boxAndWhisker{
+    margin: 20px;
+    padding: 10px;
+    };
