@@ -9,18 +9,24 @@ function initViz(){
 
     //This is an object containing some properties and their default values being set
     var options = {
-        hidetabs : true,
+        hideTabs : true,
+        hideToolbar : true,
         onFirstInteractive: function ()
             {
-                workbook = viz.getWorkbook(); //get the current view and get the workbook object
+                workbook = viz.getWorkbook();
+                //viz here is a function scope and it is one of the tableau inbuilt object
+                //get the current view and get the workbook object
                 activeSheet = workbook.getActiveSheet(); 
                 //get the active sheet from the workbook object of the view
             }
         };
 
     var viz = new tableau.Viz(containerDiv, url, options);
+    //viz here is of the global scope and a variable
     //A new object created for an inbuilt object/function called tableau with a property called Viz
 };
+
+
 
 function barChart(){
     workbook.activateSheetAsync("Bar Chart")
