@@ -1,24 +1,12 @@
-// function promptuser(){
-//     var txt;
-//     var name = window.prompt('Enter your name')
-//     if (name != null || name == ''){
-
-//         txt = 'Hello ' + name
-//     }
-//     document.getElementById('name').innerHTML = txt;
-//     // This changes the inner property of name id for the button and assigns the txt value to it
-
-// }
-
-// //arrays
-// let car = [];
-// car.push('kenny');
-// console.log(car);
-
 function initViz(){
     var containerDiv = document.getElementById('"vizContainer"');
+    //a variable that holds the div container's ID in the body of the html
     var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/USA";
+    //url of the dashboard on Tableau Public
     var viz = new tableau.Viz(containerDiv, url);
+    //A new object created for an inbuilt object/function called tableau with a property called Viz
+
+    //This is an object containing some properties and their default values being set
     var options = {
         hidetabs : true,
         onFirstInteractive: function ()
