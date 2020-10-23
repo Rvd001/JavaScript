@@ -7,6 +7,7 @@ function initViz(){
     var viz = new tableau.Viz(containerDiv, url);
     //A new object created for an inbuilt object/function called tableau with a property called Viz
 
+    
     //This is an object containing some properties and their default values being set
     var options = {
         hidetabs : true,
