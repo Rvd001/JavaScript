@@ -12,14 +12,16 @@ function promptuser(){
 
 //arrays
 let car = [];
-car.push('kenny')
-console.log(car)
+car.push('kenny');
+console.log(car);
 
 function initViz(){
     var containerDiv = document.getElementById('"vizContainer"');
-    var url = "";
-    var viz = new tableau.Viz(containerDiv, url)
-};
-
-
-
+    var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/USA";
+    var viz = new tableau.Viz(containerDiv, url);
+    var options = {
+        hidetabs : true,
+        onFirstInteractive: function () {
+        console.log("Run this code when the viz has finished loading.")
+    }
+}
