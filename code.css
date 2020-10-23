@@ -4,16 +4,16 @@ width: 800px;
 };
 
 #barChart{
-margin: 20px;
-padding: 10px;
+margin: 5px;
+padding: 5px;
 };
 
 #bubbleChart{
-    margin: 20px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     };
 
 #boxAndWhisker{
-    margin: 20px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     };
