@@ -39,23 +39,24 @@ function initViz(){
 //Not yet working
 
 function barChart(){
-    workbook = viz.getWorkbook();
+    
     workbook.activateSheetAsync("Bar Chart")
 };
 
 function bubbleChart(){
-    workbook = viz.getWorkbook();
+    
     workbook.activateSheetAsync("Bubble Chart")
 };
 
 function boxAndWhisker(){
-    workbook = viz.getWorkbook();
+    
     workbook.activateSheetAsync("Box and Whisker")
 };
 
 
 //Filters
 //wEST Filter
+//Promise should be used here
 
 function westFilter(){
     workbook.activateSheetAsync("Bar Chart");
