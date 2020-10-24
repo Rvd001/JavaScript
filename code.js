@@ -95,3 +95,29 @@ function southFilter(){
 };
 
 
+
+//radio button Activation
+
+function radioButton()
+{
+    const rbs = document.querySelectorAll('input[name = "region"]');
+    //double quote is needed in a single quote to ensure specitifity
+    let selectedValue;
+    for(const radiobutton of radiobuttons){
+        if (radiobutton.checked){
+            selectedValue = radiobutton.value;
+            break;
+        }
+    }
+
+
+
+};
+
+
+
+
+
+
+
+
