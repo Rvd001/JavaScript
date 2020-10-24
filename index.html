@@ -17,10 +17,26 @@
     <button type="button" id = "boxAndWhisker" onclick="boxAndWhisker();">Box and Whisker Plot</button>
     <br>
     <br>
+
+
     <!-- buttons for filter -->
     <button type="button" id = "West" onclick="westFilter();">West</button>
     <button type="button" id = "East" onclick="eastFilter();">East</button>
     <button type="button" id = "South" onclick="southFilter();">South</button>
+    <br>
+    <br>
+
+<!-- Test Radio Button for Filters -->
+
+    <input type="radio" id="Western" name="region" value="West">
+    <label for="West">West</label><br>
+    <input type="radio" id="Eastern" name="region" value="East">
+    <label for="East">East</label><br>
+    <input type="radio" id="Southern" name="region" value="South">
+    <label for="other">South</label>
+    <input type="radio" id="Central" name="region" value="Central">
+    <label for="other">Central</label>
+
 
 
     <div id="vizContainer"></div>
