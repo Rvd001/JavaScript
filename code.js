@@ -35,7 +35,8 @@ function initViz(){
 
 };
 
-
+//Switiching Tabs
+//Not yet working
 
 function barChart(){
     workbook = viz.getWorkbook();
@@ -51,4 +52,45 @@ function boxAndWhisker(){
     workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Box and Whisker")
 };
+
+
+//Filters
+//wEST Filter
+
+function westFilter(){
+    workbook.activateSheetAsync("Bar Chart");
+    activeSheet.applyFilterAsync(
+        'Region',
+        'West',
+        tableau.FilterUpdateType.REPLACE
+    )
+};
+
+
+
+//EAST Filter
+
+function eastFilter(){
+    workbook.activateSheetAsync("Bar Chart");
+    activeSheet.applyFilterAsync(
+        'Region',
+        'East',
+        tableau.FilterUpdateType.REPLACE
+    )
+};
+
+
+
+
+//SOUTH Filter
+
+function southFilter(){
+    workbook.activateSheetAsync("Bar Chart");
+    activeSheet.applyFilterAsync(
+        'Region',
+        'South',
+        tableau.FilterUpdateType.REPLACE
+    )
+};
+
 
