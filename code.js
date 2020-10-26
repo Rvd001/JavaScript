@@ -38,6 +38,34 @@ function initViz(){
 
 };
 
+//Test
+
+var viz;
+
+function initViz() {
+    var containerDiv = document.getElementById("vizContainer"),
+        url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
+        options = {
+            hideTabs: true
+        };
+
+    viz = new tableau.Viz(containerDiv, url, options);
+}
+
+function vizResize() {
+    var width = document.getElementById("resizeWidth").value;
+    var height = document.getElementById("resizeHeight").value;
+
+    viz.setFrameSize(parseInt(width, 10), parseInt(height, 10));
+}
+
+
+
+//End of Test
+
+
+
+
 //Switiching Tabs
 //Not yet working
 

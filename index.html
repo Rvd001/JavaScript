@@ -10,7 +10,9 @@
     <script src="https://public.tableau.com/javascripts/api/tableau-2.6.0.min.js"></script>
     
 </head>
-<body onload="initViz();">
+
+
+<!-- <body onload="initViz();"> -->
 
     <!-- <div id="headerImage">
         <img src="cndro logo.png" alt="Company Logo">
@@ -49,7 +51,7 @@
         </div>
 
     </div> -->
-
+<!-- 
     <button type="button" id = "barChart" onclick="barChart();">Bar Chart</button>
     <button type="button" id = "bubbleChart" onclick="bubbleChart();">Bubble Chart</button>
     <button type="button" id = "boxAndWhisker" onclick="boxAndWhisker();">Box and Whisker Plot</button>
@@ -59,14 +61,14 @@
 
 
     <!-- buttons for filter -->
-    <button type="button" id = "West" onclick="westFilter();">West</button>
+    <!-- <button type="button" id = "West" onclick="westFilter();">West</button>
     <button type="button" id = "East" onclick="eastFilter();">East</button>
     <button type="button" id = "South" onclick="southFilter();">South</button>
     <br>
-    <br>
+    <br> -->
 
 <!-- Test Radio Button for Filters -->
-
+<!-- 
     <input type="radio" id="Western" name="region" value="West">
     <label for="West">West</label><br>
     <input type="radio" id="Eastern" name="region" value="East">
@@ -81,5 +83,21 @@
     <div id="vizContainer"></div>
 
     <!-- <button type="button" onclick="promptuser()" id ='name'>Welcome Message</button> -->
-</body>
+<!-- </body> --> --> -->
+
+
+<body onload="initViz();">
+        <div id="vizContainer" style="width:800px; height:700px; overflow:auto;"></div>
+        <div id="controls" style="padding:20px;">
+            <form id="resizeForm">
+                <input type="text" id="resizeWidth" placeholder="Width">
+                <input type="text" id="resizeHeight" placeholder="Height">
+                <button type="button" onClick="vizResize();">Resize</button>
+            </form>
+        </div>
+    </body>
+
+
+
+
 </html>
