@@ -1,6 +1,6 @@
 #vizContainer{
-height: 700px;
-width: 800px;
+height: relative;
+width: relative;
 overflow: auto;
 };
 /* 
