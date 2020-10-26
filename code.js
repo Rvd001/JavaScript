@@ -15,7 +15,7 @@
     //url of the dashboard on Tableau Public
 
 
-    
+
 
     //This is an object containing some properties and their default values being set
     // var options = {
@@ -42,7 +42,9 @@
 
 //Test
 
-var viz, workbook, activeSheet;
+var viz;
+// var workbook;
+// var activeSheet;
 
 function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
