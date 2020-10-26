@@ -1,8 +1,8 @@
-/* #vizContainer{
+#vizContainer{
 height: 800px;
 width: 800px;
-}; */
-
+};
+/* 
 h1{
     position: relative;
     top: 50px;
@@ -10,7 +10,7 @@ h1{
     width: 100px;
     font-family: "Georgia",'Gill Sans', 'Gill Sans MT','Trebuchet MS',sans-serif;
 
-}
+} */
 
 
 #welcome{
@@ -18,7 +18,7 @@ h1{
     font-family: "Georgia",'Gill Sans', 'Gill Sans MT','Trebuchet MS',sans-serif;
 }
 
-
+/* 
 #headerImage{
     height: 50px;
     width: 50px;
@@ -39,7 +39,7 @@ h1{
 
     float: left;
     width: 60%;
-}
+} */
 
 
 
