@@ -13,6 +13,16 @@ h1{
 }
 
 
+#welcome{
+    position: left;
+    top: 55px;
+    left: 50px;
+    width: 100px;
+    font-family: "Georgia",'Gill Sans', 'Gill Sans MT','Trebuchet MS',sans-serif;
+
+}
+
+
 .spacer{
     height: 50px;
     background-color: blue;
