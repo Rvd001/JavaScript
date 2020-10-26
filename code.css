@@ -19,6 +19,11 @@ h1{
 }
 
 
+#headerImage{
+    height: 100px;
+    width: 100px;
+}
+
 .spacer{
     height: 50px;
     background-color: blue;
