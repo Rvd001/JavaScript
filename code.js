@@ -48,7 +48,8 @@ var activeSheet;
 
 function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
-        url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
+        // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
+        url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Bar",
         options = {
             hideTabs: true,
             onFirstInteractive: function ()
@@ -87,7 +88,7 @@ function vizResize() {
 function barChart(){
 
     // var workbook = viz.getWorkbook();
-    workbook.activateSheetAsync("Bar Chart");
+    workbook.activateSheetAsync("Bar");
     console.log('Bar Chart Activated')
 };
 
@@ -100,7 +101,7 @@ function bubbleChart(){
 
 function boxAndWhisker(){
     var workbook = viz.getWorkbook();
-    workbook.activateSheetAsync("Box and Whisker");
+    workbook.activateSheetAsync("BW");
     console.log('Box and Whisker Chart Activated')
 };
 
