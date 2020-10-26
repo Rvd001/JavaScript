@@ -62,8 +62,8 @@ function bubbleChart(){
     var workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Bubble Chart");
     console.log('Bubble Chart Activated');
-    var chart = getElementById("bubbleChart");
-    var chartID = getElementById("chartType");
+    var chart = document.getElementById("bubbleChart");
+    var chartID = document.getElementById("chartType");
     chartID.innerHTML = 'You have Chosen to see ' + chart.value;
 };
 
