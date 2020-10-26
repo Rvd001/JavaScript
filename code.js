@@ -52,8 +52,8 @@ function barChart(){
     // var workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Bar");
     console.log('Bar Chart Activated');
-    var chart = getElementById("barChart");
-    var chartID = getElementById("chartType");
+    var chart = document.getElementById("barChart");
+    var chartID = document.getElementById("chartType");
     chartID.innerHTML = 'You have Chosen to see ' + chart.value;
 };
 
@@ -71,8 +71,8 @@ function boxAndWhisker(){
     var workbook = viz.getWorkbook();
     workbook.activateSheetAsync("BW");
     console.log('Box and Whisker Chart Activated');
-    var chart = getElementById("boxAndWhisker");
-    var chartID = getElementById("chartType");
+    var chart = document.getElementById("boxAndWhisker");
+    var chartID = document.getElementById("chartType");
     chartID.innerHTML = 'You have Chosen to see ' + chart.value;
 };
 
