@@ -85,10 +85,12 @@ function vizResize() {
 //Not yet working
 
 function barChart(){
-    workbook = viz.getWorkbook();
+    var sheet = viz.getWorkbook().getActiveSheet();
+    workbook = sheet.getWorkbook();
     workbook.activateSheetAsync("Bar Chart");
     console.log('Bar Chart Activated')
 };
+
 
 function bubbleChart(){
     workbook = viz.getWorkbook();
