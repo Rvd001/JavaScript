@@ -59,12 +59,12 @@ function boxAndWhisker(){
 //Promise should be used here
 
 function westFilter(){
-    workbook.activateSheetAsync("Bar Chart");
+    // workbook.activateSheetAsync("Bar Chart");
     activeSheet.applyFilterAsync(
-        'Region',
-        'West',
+        "Region",
+        "West",
         tableau.FilterUpdateType.REPLACE
-    )
+    );
 };
 
 
@@ -109,8 +109,6 @@ function radioButton()
             break;
         }
     }
-
-
 
 
 };
