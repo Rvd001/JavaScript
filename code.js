@@ -86,7 +86,7 @@ function westFilter(){
 //EAST Filter
 
 function eastFilter(){
-    workbook.activateSheetAsync("Bar Chart");
+
     activeSheet.applyFilterAsync(
         'Region',
         'East',
@@ -100,11 +100,11 @@ function eastFilter(){
 //SOUTH Filter
 
 function southFilter(){
-    workbook.activateSheetAsync("Bar Chart");
+   
     activeSheet.applyFilterAsync(
         'Region',
         'South',
-        tableau.FilterUpdateType.REPLACE
+        tableau.FilterUpdateType.ADD
     )
 };
 
