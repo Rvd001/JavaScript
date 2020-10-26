@@ -40,17 +40,20 @@ function initViz(){
 
 function barChart(){
     
-    workbook.activateSheetAsync("Bar Chart")
+    workbook.activateSheetAsync("Bar Chart");
+    console.log('Bar Chart Activated')
 };
 
 function bubbleChart(){
     
-    workbook.activateSheetAsync("Bubble Chart")
+    workbook.activateSheetAsync("Bubble Chart");
+    console.log('Bubble Chart Activated')
 };
 
 function boxAndWhisker(){
     
-    workbook.activateSheetAsync("Box and Whisker")
+    workbook.activateSheetAsync("Box and Whisker");
+    console.log('Box and Whisker Chart Activated')
 };
 
 
