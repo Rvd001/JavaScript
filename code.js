@@ -1,52 +1,60 @@
 
 //Setting Global Variable
 //This will give undefined by default.
-var viz, workbook, activeSheet, containerDiv, options, url;
+// var viz, workbook, activeSheet, containerDiv, options, url;
 
 
-function initViz(){
-    var containerDiv = document.getElementById('"vizContainer"');
+// function initViz(){
+//     var containerDiv = document.getElementById('"vizContainer"');
     //a variable that holds the div container's ID in the body of the html
     // var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/USA";
 
 
     // var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Overview";
-    var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart";
+    // var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart";
     //url of the dashboard on Tableau Public
 
 
     //This is an object containing some properties and their default values being set
-    var options = {
-        hideTabs : true,
-        hideToolbar : true,
+    // var options = {
+    //     hideTabs : true,
+    //     hideToolbar : true,
         // width : "800px",
         // height : "800px", 
-        onFirstInteractive: function (vizEvent)
-            {
-                workbook = vizEvent.getViz().getWorkbook();
-                //viz here is a function scope and it is one of the tableau inbuilt object
-                //get the current view and get the workbook object
-                activeSheet = workbook.getActiveSheet(); 
-                //get the active sheet from the workbook object of the view
-            }
-        };
+        // onFirstInteractive: function (vizEvent)
+        //     {
+        //         workbook = vizEvent.getViz().getWorkbook();
+        //         //viz here is a function scope and it is one of the tableau inbuilt object
+        //         //get the current view and get the workbook object
+        //         activeSheet = workbook.getActiveSheet(); 
+        //         //get the active sheet from the workbook object of the view
+        //     }
+        // };
 
 
-    var viz = new tableau.Viz(containerDiv, url, options);
-    //viz here is of the global scope and a variable
-    //A new object created for an inbuilt object/function called tableau with a property called Viz
+//     var viz = new tableau.Viz(containerDiv, url, options);
+//     //viz here is of the global scope and a variable
+//     //A new object created for an inbuilt object/function called tableau with a property called Viz
 
-};
+// };
 
 //Test
 
-var viz;
+var viz, workbook, activeSheet;
 
 function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
         url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
         options = {
-            hideTabs: true
+            hideTabs: true,
+            onFirstInteractive: function ()
+
+                {
+                    workbook = viz.getWorkbook();
+                    activeSheet = workbook.getActiveSheet();
+
+                }
+
         };
 
     viz = new tableau.Viz(containerDiv, url, options);
@@ -55,6 +63,8 @@ function initViz() {
 function vizResize() {
     var width = document.getElementById("resizeWidth").value;
     var height = document.getElementById("resizeHeight").value;
+
+    // gets the width and height value
 
     viz.setFrameSize(parseInt(width, 10), parseInt(height, 10));
 }
