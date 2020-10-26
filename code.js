@@ -10,7 +10,8 @@ function initViz(){
     // var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/USA";
 
 
-    var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Overview";
+    // var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Overview";
+    var url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart";
     //url of the dashboard on Tableau Public
 
 
