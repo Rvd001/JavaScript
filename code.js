@@ -88,8 +88,8 @@ function westFilter(){
 function eastFilter(){
 
     activeSheet.applyFilterAsync(
-        'Region',
-        'East',
+        "Region",
+        "East",
         tableau.FilterUpdateType.REPLACE
     )
 };
