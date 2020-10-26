@@ -32,13 +32,13 @@ h1{
 #textArea{
     position: absolute;
     float: right;
-    margin-left: 650px;
+    margin-left: 70%;
 }
 
 #vizArea{
 
     float: left;
-    width: 600px;
+    width: 60%;
 }
 
 
