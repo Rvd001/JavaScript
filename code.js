@@ -19,6 +19,8 @@ function initViz(){
     var options = {
         hideTabs : true,
         hideToolbar : true,
+        width : "700px",
+        height : "500px", 
         onFirstInteractive: function (vizEvent)
             {
                 workbook = vizEvent.getViz().getWorkbook();
