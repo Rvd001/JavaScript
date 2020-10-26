@@ -1,7 +1,7 @@
 
 //Setting Global Variable
 //This will give undefined by default.
-var viz, workbook, activeSheet;
+var viz, workbook, activeSheet, containerDiv, options, url;
 
 
 function initViz(){
@@ -18,9 +18,9 @@ function initViz(){
     var options = {
         hideTabs : true,
         hideToolbar : true,
-        onFirstInteractive: function ()
+        onFirstInteractive: function (vizEvent)
             {
-                workbook = viz.getWorkbook();
+                workbook = vizEvent.getViz().getWorkbook();
                 //viz here is a function scope and it is one of the tableau inbuilt object
                 //get the current view and get the workbook object
                 activeSheet = workbook.getActiveSheet(); 
