@@ -43,8 +43,8 @@
 //Test
 
 var viz;
-// var workbook;
-// var activeSheet;
+var workbook;
+var activeSheet;
 
 function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
@@ -54,8 +54,8 @@ function initViz() {
             onFirstInteractive: function ()
 
                 {
-                    // workbook = viz.getWorkbook();
-                    // activeSheet = workbook.getActiveSheet();
+                    workbook = viz.getWorkbook();
+                    activeSheet = workbook.getActiveSheet();
                     console.log("options is working");
 
                 }
@@ -86,7 +86,7 @@ function vizResize() {
 
 function barChart(){
 
-    var workbook = viz.getWorkbook();
+    // var workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Bar Chart");
     console.log('Bar Chart Activated')
 };
