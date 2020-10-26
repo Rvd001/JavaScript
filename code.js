@@ -91,7 +91,7 @@ function barChart(){
 };
 
 function bubbleChart(){
-    
+    workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Bubble Chart");
     console.log('Bubble Chart Activated')
 };
