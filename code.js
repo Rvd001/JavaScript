@@ -76,7 +76,7 @@ function bubbleChart(){
 
 var bubbleChart = document.getElementById("bubbleChart");
 var boxAndWhisker = document.getElementById("boxAndWhisker");
-var regionDiv = document.getElementById("filterSelection")
+var regionDiv = document.getElementById("filterSelection");
 
 bubbleChart.addEventListener('click', function(){
     regionDiv.style.display = 'none';
