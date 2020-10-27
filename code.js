@@ -45,6 +45,13 @@ function originalSize() {
 //End of Test
 
 
+
+
+
+
+
+
+
 //Switching Sheets
 
 function barChart(){
@@ -66,6 +73,22 @@ function bubbleChart(){
     var chartID = document.getElementById("chartType");
     chartID.innerHTML = 'You have Chosen to see ' + chart.value;
 };
+
+var bubbleChart = document.getElementById("bubbleChart");
+var boxAndWhisker = document.getElementById("boxAndWhisker");
+var regionDiv = document.getElementById("filterSelection")
+
+bubbleChart.addEventListener('click', function(){
+    regionDiv.style.display = 'none';
+});
+
+boxAndWhisker.addEventListener('click', function(){
+    regionDiv.style.display = 'none';
+});
+
+
+
+
 
 function boxAndWhisker(){
     var workbook = viz.getWorkbook();
