@@ -76,15 +76,18 @@ function bubbleChart(){
 
 var bubbleChart = document.getElementById("bubbleChart");
 var boxAndWhisker = document.getElementById("boxAndWhisker");
-var regionDiv = document.getElementById("filterSelection");
+
 
 bubbleChart.addEventListener('click', function(){
+    var regionDiv = document.getElementById("filterSelection");
     regionDiv.style.display = 'none';
 });
 
 boxAndWhisker.addEventListener('click', function(){
+    var regionDiv = document.getElementById("filterSelection");
     regionDiv.style.display = 'none';
 });
+
 
 
 
