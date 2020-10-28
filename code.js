@@ -93,6 +93,7 @@ boxAndWhisker.addEventListener('click', function(){
 
 
 
+
 function boxAndWhisker(){
     var workbook = viz.getWorkbook();
     workbook.activateSheetAsync("BW");
