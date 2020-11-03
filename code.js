@@ -66,7 +66,7 @@ function barChart(){
 
 
 function bubbleChart(){
-    var workbook = viz.getWorkbook();
+    // var workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Bubble Chart");
     console.log('Bubble Chart Activated');
     var chart = document.getElementById("bubbleChart");
