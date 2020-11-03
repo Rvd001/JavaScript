@@ -65,7 +65,7 @@ function barChart(){
 };
 
 
-function bubbleChart(){
+function BubbleChart(){
     // var workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Bubble Chart");
     console.log('Bubble Chart Activated');
@@ -74,6 +74,7 @@ function bubbleChart(){
     chartID.innerHTML = 'You have Chosen to see ' + chart.value;
 };
 
+//This is because the Bubble chart and BW Chart do not have region filter
 var bubbleChart = document.getElementById("bubbleChart");
 var boxAndWhisker = document.getElementById("boxAndWhisker");
 
