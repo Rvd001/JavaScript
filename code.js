@@ -38,6 +38,7 @@ function vizResize() {
 
 function originalSize() {
     // viz.setFrameSize(parseInt(1300, 10), parseInt(700, 10));
+    var workbook = viz.getWorkbook();
     workbook.revertAllAsync();
 }
 
