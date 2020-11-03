@@ -66,7 +66,7 @@ function barChart(){
 
 
 function BubbleChart(){
-    // var workbook = viz.getWorkbook();
+    var workbook = viz.getWorkbook();
     workbook.activateSheetAsync("Bubble Chart");
     console.log('Bubble Chart Activated');
     var chart = document.getElementById("bubbleChart");
@@ -75,20 +75,21 @@ function BubbleChart(){
 };
 
 //This is because the Bubble chart and BW Chart do not have region filter
-var bubbleChart = document.getElementById("bubbleChart");
-var boxAndWhisker = document.getElementById("boxAndWhisker");
+
+// var bubbleChart = document.getElementById("bubbleChart");
+// var boxAndWhisker = document.getElementById("boxAndWhisker");
 
 
 
-bubbleChart.addEventListener('click', function(){
-    var regionDiv = document.getElementById("filterSelection");
-    regionDiv.style.display = 'none';
-});
+// bubbleChart.addEventListener('click', function(){
+//     var regionDiv = document.getElementById("filterSelection");
+//     regionDiv.style.display = 'none';
+// });
 
-boxAndWhisker.addEventListener('click', function(){
-    var regionDiv = document.getElementById("filterSelection");
-    regionDiv.style.display = 'none';
-});
+// boxAndWhisker.addEventListener('click', function(){
+//     var regionDiv = document.getElementById("filterSelection");
+//     regionDiv.style.display = 'none';
+// });
 
 
 
